@@ -68,13 +68,13 @@ function leveler(){
 
 function testUserInput(currentLevel){
 
-
     if (sequenceList[currentLevel] === userSequenceList[currentLevel]){
         console.log("correct");
         
         if(userSequenceList.length === sequenceList.length){
             
             setTimeout(function(){
+                //back to leveler to test again
                 leveler();
             }, 1000);
             
